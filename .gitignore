@@ -1,43 +1,53 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+
+# Logs
+*.log
 
 # Environment variables
 .env
 .env.*
 !.env.example
 
-# Streamlit
-.streamlit/secrets.toml
-.streamlit/credentials.toml
+# Secrets and credentials
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cert
 
-# Data files (except templates)
-data/email_alert_subscribers.csv
-data/session_log.csv
-data/vote_results.csv
-data/viewing_requests.csv
+# Data files
+data/*.csv
+!data/example_data.csv
 
-# Logs
-*.log
-logs/
+# Model files
+*.pkl
+*.h5
+*.hdf5
+*.model
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Python
+*.pyc
+__pycache__/
+
+# Virtual Environment
+venv/
+ENV/
+.env/
+.venv/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
 
 # OS generated files
 .DS_Store
@@ -48,41 +58,34 @@ logs/
 ehthumbs.db
 Thumbs.db
 
-# IDE specific files
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-
-# Jupyter Notebook
-.ipynb_checkpoints/
+# Project specific
+hash_gen.py  # Contains test credentials
 
 # Local development
-.venv/
-venv/
-ENV/
+local_settings.py
 
-# Project specific
-*.pkl
-*.model
-*.h5
-*.hdf5
-*.tflite
-*.tfl
-*.pbtxt
-*.pb
-*.meta
-*.index
-*.data-*
+# Test files
+test_*.py
 
-# Temporary files
-*.tmp
-*.bak
-*.swp
-*~.nib/
+# Coverage reports
+.coverage
+htmlcov/
 
-# Project files to exclude (if any)
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Unit test / coverage reports
+.tox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Streamlit
 !.streamlit/config.toml  # We want to keep this
 !data/*.csv             # Keep template CSVs, but not runtime data
 !models/*.pkl           # Keep model files

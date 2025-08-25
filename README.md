@@ -6,6 +6,11 @@
 </div>
 
 > **Note**: To display your logo, replace the image URL above with your actual logo URL. The current image is a placeholder.
+<<<<<<< HEAD
+=======
+
+> **Note**: This project is an independent creation and is not affiliated with WestProp Holdings Limited. The WestProp logo is used for demonstration purposes only and remains the property of WestProp Holdings Limited.
+>>>>>>> 8339533ec94e9a999fa73338b670bca1ca93be68
 
 > **Disclaimer**: This is an independent project built for educational and portfolio demonstration purposes. This dashboard is not an official product of WestProp Holdings Limited. All WestProp brand assets, trademarks, and references are used respectfully and remain the exclusive property of WestProp Holdings Limited.
 
