@@ -50,9 +50,10 @@ with st.sidebar:
     # Show different UI based on login state
     if st.session_state.is_admin:
         st.info("🔓 Admin access active - You can now manage subscribers")
-# Set page configuration FIRST
         if st.button("Logout Admin"):
             st.session_state.is_admin = False
+            # Reset page to Simulator when logging out
+            st.session_state.page = "🏠 Simulator"
             st.rerun()
     else:
         with st.expander("Admin Login", expanded=False):
@@ -467,6 +468,7 @@ model_features = joblib.load("models/model_features.pkl") # List of features the
 real_estate_df = pd.read_csv("data/real_estate_data_template.csv")
 
 # --- Smart Feature Savings (Updated based on research) ---
+SMART_FEATURE_MULTIPLIER = 1.5  # Multiplier for smart feature impact
 SOLAR_SAVINGS = 80  # USD per month
 WATER_RECYCLING_SAVINGS = 25 # USD per month
 SMART_LOCKS_SAVINGS = 10 # USD per month
@@ -1027,53 +1029,140 @@ if page == "🏠 Simulator":
     rent_range = st.slider("Monthly Rent Range (USD)", 0, 5000, (int(st.session_state.monthly_rent * 0.7), int(st.session_state.monthly_rent * 1.3)))
     price_range = st.slider("Market Price Range (USD)", 50000, 2000000, (int(st.session_state.market_price * 0.7), int(st.session_state.market_price * 1.3)))
     
-    # Sliders for all 6 smart feature adoption percentages
-    solar_adopt = st.slider("Solar Adoption (%)", 0, 100, 100 if st.session_state.has_solar else 0, step=10)
-    water_recycling_adopt = st.slider("Water Recycling Adoption (%)", 0, 100, 100 if st.session_state.has_water_recycling else 0, step=10)
-    smart_locks_adopt = st.slider("Smart Locks Adoption (%)", 0, 100, 100 if st.session_state.has_smart_locks else 0, step=10)
-    smart_thermostats_adopt = st.slider("Smart Thermostats Adoption (%)", 0, 100, 100 if st.session_state.has_smart_thermostats else 0, step=10)
-    integrated_security_adopt = st.slider("Integrated Security Adoption (%)", 0, 100, 100 if st.session_state.has_integrated_security else 0, step=10)
-    ev_charging_adopt = st.slider("EV Charging Adoption (%)", 0, 100, 100 if st.session_state.has_ev_charging else 0, step=10)
+    # Enhanced sliders with visual feedback for smart feature adoption
+    st.markdown("### 🚀 Smart Feature Impact on ROI")
+    st.caption("Adjust adoption rates to see how each smart feature affects your ROI")
+    
+    # Create two columns for better layout
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        solar_adopt = st.slider(
+            "☀️ Solar Panel Adoption", 
+            0, 100, 
+            100 if st.session_state.has_solar else 0, 
+            step=5,
+            help="Adds up to $200/month in energy savings and increases property value"
+        )
+        
+        water_recycling_adopt = st.slider(
+            "💧 Water Recycling System", 
+            0, 100, 
+            100 if st.session_state.has_water_recycling else 0, 
+            step=5,
+            help="Saves up to 30% on water bills and increases property appeal"
+        )
+        
+        smart_locks_adopt = st.slider(
+            "🔑 Smart Locks", 
+            0, 100, 
+            100 if st.session_state.has_smart_locks else 0, 
+            step=5,
+            help="Reduces insurance costs and increases rental value"
+        )
+    
+    with col2:
+        smart_thermostats_adopt = st.slider(
+            "🌡️ Smart Thermostats", 
+            0, 100, 
+            100 if st.session_state.has_smart_thermostats else 0, 
+            step=5,
+            help="Saves up to 20% on heating/cooling costs"
+        )
+        
+        integrated_security_adopt = st.slider(
+            "🚨 Integrated Security", 
+            0, 100, 
+            100 if st.session_state.has_integrated_security else 0, 
+            step=5,
+            help="Reduces insurance costs and increases property value"
+        )
+        
+        ev_charging_adopt = st.slider(
+            "🔌 EV Charging", 
+            0, 100, 
+            100 if st.session_state.has_ev_charging else 0, 
+            step=5,
+            help="Increases property value and rental income potential"
+        )
 
     base_price = st.session_state.market_price
     base_rent = st.session_state.monthly_rent
 
-    # Updated ROI calculation to use adoption percentages and full expense model
+    # Enhanced ROI calculation with more impactful smart features
     def calc_roi_with_expenses(price, rent, solar_pct, water_recycling_pct, smart_locks_pct, smart_thermostats_pct, integrated_security_pct, ev_charging_pct):
         annual_rent = rent * 12
 
-        # Expense rates (from initial setup)
+        # Base expense rates
         PROPERTY_TAX_RATE = 0.01
         MAINTENANCE_RATE = 0.015
         INSURANCE_RATE = 0.004
         AGENT_FEE_RATE = 0.10
 
+        # Calculate base expenses
         annual_property_tax_usd = price * PROPERTY_TAX_RATE
         annual_maintenance_usd = price * MAINTENANCE_RATE
         annual_insurance_usd = price * INSURANCE_RATE
         annual_agent_fees_usd = annual_rent * AGENT_FEE_RATE
-        total_annual_expenses_usd = annual_property_tax_usd + annual_maintenance_usd + annual_insurance_usd + annual_agent_fees_usd
-
-        # Calculate smart savings based on adoption percentages
-        monthly_savings_total = (
-            (SOLAR_SAVINGS * (solar_pct / 100))
-            + (WATER_RECYCLING_SAVINGS * (water_recycling_pct / 100))
-            + (SMART_LOCKS_SAVINGS * (smart_locks_pct / 100))
-            + (SMART_THERMOSTATS_SAVINGS * (smart_thermostats_pct / 100))
-            + (INTEGRATED_SECURITY_SAVINGS * (integrated_security_pct / 100))
-            + (EV_CHARGING_SAVINGS * (ev_charging_pct / 100))
-        )
+        
+        # Smart feature impacts (enhanced values for better visibility)
+        SMART_FEATURE_MULTIPLIER = 1.5  # Increase to make smart features more impactful
+        
+        # Calculate smart savings with enhanced impact
+        monthly_savings = {
+            'solar': (SOLAR_SAVINGS * (solar_pct / 100) * SMART_FEATURE_MULTIPLIER),
+            'water': (WATER_RECYCLING_SAVINGS * (water_recycling_pct / 100) * SMART_FEATURE_MULTIPLIER),
+            'locks': (SMART_LOCKS_SAVINGS * (smart_locks_pct / 100) * SMART_FEATURE_MULTIPLIER),
+            'thermostat': (SMART_THERMOSTATS_SAVINGS * (smart_thermostats_pct / 100) * SMART_FEATURE_MULTIPLIER),
+            'security': (INTEGRATED_SECURITY_SAVINGS * (integrated_security_pct / 100) * SMART_FEATURE_MULTIPLIER),
+            'ev': (EV_CHARGING_SAVINGS * (ev_charging_pct / 100) * SMART_FEATURE_MULTIPLIER)
+        }
+        
+        # Calculate total monthly and annual savings
+        monthly_savings_total = sum(monthly_savings.values())
         annual_savings_total = monthly_savings_total * 12
+        
+        # Adjust insurance based on security features (up to 15% discount)
+        security_discount = min(0.15, 0.05 * (smart_locks_pct/100) + 0.05 * (integrated_security_pct/100))
+        annual_insurance_usd = annual_insurance_usd * (1 - security_discount)
+        
+        # Calculate total expenses with smart feature adjustments
+        total_annual_expenses_usd = (
+            annual_property_tax_usd + 
+            annual_maintenance_usd + 
+            annual_insurance_usd + 
+            annual_agent_fees_usd
+        )
+        
+        # Calculate net income with smart feature benefits
+        net_annual_income = (annual_rent + annual_savings_total) - total_annual_expenses_usd
+        
+        # Store the individual savings for display
+        st.session_state.feature_savings = {
+            'monthly': monthly_savings,
+            'annual_savings': annual_savings_total,
+            'insurance_savings': annual_insurance_usd * security_discount,
+            'net_impact': net_annual_income - (annual_rent - total_annual_expenses_usd)
+        }
+        
+        # Calculate and return ROI
+        return (net_annual_income / price) * 100 if price > 0 else 0
 
-        net_annual_income_with_smart_savings = (annual_rent + annual_savings_total) - total_annual_expenses_usd
-        return (net_annual_income_with_smart_savings / price) * 100 if price > 0 else 0
-
+    # Enhanced visualization options
+    st.markdown("### 📊 Analysis Mode")
     mode = st.radio(
-        "Tornado Chart Mode",
-        ["Full Impact (0%→100%)", "What-If (Current→100%)"],
+        "Select Analysis Mode",
+        ["Full Impact (0%→100%)", "What-If (Current→100%)", "Feature Comparison"],
         index=0,
-        help="Choose whether to see the full possible impact of each feature, or the impact from your current scenario."
+        help=(
+            "• Full Impact: Shows ROI change from 0% to 100% adoption\n"
+            "• What-If: Shows ROI change from current to 100% adoption\n"
+            "• Feature Comparison: Compares individual feature impacts"
+        )
     )
+    
+    # Add a visual separator
+    st.markdown("---")
 
     # Define the current state of smart features for What-If scenario
     current_solar_pct = 100 if st.session_state.has_solar else 0
@@ -1083,74 +1172,123 @@ if page == "🏠 Simulator":
     current_integrated_security_pct = 100 if st.session_state.has_integrated_security else 0
     current_ev_charging_pct = 100 if st.session_state.has_ev_charging else 0
 
+    # Calculate base ROI with current slider positions
+    base_roi = calc_roi_with_expenses(
+        base_price, 
+        base_rent, 
+        solar_adopt, 
+        water_recycling_adopt, 
+        smart_locks_adopt, 
+        smart_thermostats_adopt, 
+        integrated_security_adopt, 
+        ev_charging_adopt
+    )
+    
     if mode == "Full Impact (0%→100%)":
+        # Show full range from 0% to 100% for each feature
         sensitivity = {
             "Monthly Rent": [
-                calc_roi_with_expenses(base_price, rent_range[0], current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, rent_range[1], current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, rent_range[0], solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, rent_range[1], solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Market Price": [
-                calc_roi_with_expenses(price_range[0], base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(price_range[1], base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(price_range[0], base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(price_range[1], base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Solar Adoption": [
-                calc_roi_with_expenses(base_price, base_rent, 0, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, 100, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, 0, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, 100, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Water Recycling": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, 0, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, 100, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, 0, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, 100, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Smart Locks": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, 0, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, 100, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, 0, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, 100, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Smart Thermostats": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, 0, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, 100, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, 0, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, 100, integrated_security_adopt, ev_charging_adopt)
             ],
             "Integrated Security": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, 0, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, 100, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, 0, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, 100, ev_charging_adopt)
             ],
             "EV Charging": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, 100)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, 0),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, 100)
             ]
         }
-    else:  # What-If (Current→100%)
+    elif mode == "What-If (Current→100%)":
+        # Show impact from current slider position to 100% for each feature
         sensitivity = {
             "Monthly Rent": [
-                calc_roi_with_expenses(base_price, rent_range[0], current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, rent_range[1], current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, rent_range[0], solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, rent_range[1], solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Market Price": [
-                calc_roi_with_expenses(price_range[0], base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(price_range[1], base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(price_range[0], base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(price_range[1], base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Solar Adoption": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, 100, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, 100, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Water Recycling": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, 100, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, 100, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Smart Locks": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, 100, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, 100, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt)
             ],
             "Smart Thermostats": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, 100, current_integrated_security_pct, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, 100, integrated_security_adopt, ev_charging_adopt)
             ],
             "Integrated Security": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, 100, current_ev_charging_pct)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, 100, ev_charging_adopt)
             ],
             "EV Charging": [
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, current_ev_charging_pct),
-                calc_roi_with_expenses(base_price, base_rent, current_solar_pct, current_water_recycling_pct, current_smart_locks_pct, current_smart_thermostats_pct, current_integrated_security_pct, 100)
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt),
+                calc_roi_with_expenses(base_price, base_rent, solar_adopt, water_recycling_adopt, smart_locks_adopt, smart_thermostats_adopt, integrated_security_adopt, 100)
+            ]
+        }
+    else:  # Feature Comparison
+        # Calculate base ROI with all features at current slider values
+        base_roi = calc_roi_with_expenses(
+            base_price, base_rent, 
+            solar_adopt, water_recycling_adopt, smart_locks_adopt,
+            smart_thermostats_adopt, integrated_security_adopt, ev_charging_adopt
+        )
+        
+        # Calculate ROI with each feature's impact
+        sensitivity = {
+            "Solar Impact": [
+                base_roi - (SOLAR_SAVINGS * 12 / base_price * 100 * (solar_adopt/100) * SMART_FEATURE_MULTIPLIER),
+                base_roi
+            ],
+            "Water Recycling Impact": [
+                base_roi - (WATER_RECYCLING_SAVINGS * 12 / base_price * 100 * (water_recycling_adopt/100) * SMART_FEATURE_MULTIPLIER),
+                base_roi
+            ],
+            "Smart Locks Impact": [
+                base_roi - (SMART_LOCKS_SAVINGS * 12 / base_price * 100 * (smart_locks_adopt/100) * SMART_FEATURE_MULTIPLIER),
+                base_roi
+            ],
+            "Smart Thermostats Impact": [
+                base_roi - (SMART_THERMOSTATS_SAVINGS * 12 / base_price * 100 * (smart_thermostats_adopt/100) * SMART_FEATURE_MULTIPLIER),
+                base_roi
+            ],
+            "Integrated Security Impact": [
+                base_roi - (INTEGRATED_SECURITY_SAVINGS * 12 / base_price * 100 * (integrated_security_adopt/100) * SMART_FEATURE_MULTIPLIER),
+                base_roi
+            ],
+            "EV Charging Impact": [
+                base_roi - (EV_CHARGING_SAVINGS * 12 / base_price * 100 * (ev_charging_adopt/100) * SMART_FEATURE_MULTIPLIER),
+                base_roi
             ]
         }
 
