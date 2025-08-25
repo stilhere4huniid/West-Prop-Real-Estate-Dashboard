@@ -25,16 +25,8 @@ pyOpenSSL==24.0.0
 requests==2.31.0
 urllib3==2.2.1
 cryptography==42.0.5
+protobuf==4.25.1
 
 # Required for Streamlit Cloud
-git+https://github.com/streamlit/streamlit.git@1.36.0
-
-# Dependencies with specific versions for compatibility
-protobuf==4.25.1  # Required for Streamlit compatibility
-
-# System dependencies (handled by setup.sh)
-# libgl1-mesa-glx
-# libglib2.0-0
-# libsm6
-# libxext6
-# libxrender1
+pydeck==0.8.1
+watchdog==3.0.0

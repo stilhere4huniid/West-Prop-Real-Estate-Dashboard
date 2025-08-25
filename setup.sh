@@ -1,24 +1,39 @@
 #!/bin/bash
-# Install system dependencies
+set -e  # Exit on error
+
+echo "=== Setting up environment ==="
+
+# Update and install system dependencies
+echo "Installing system dependencies..."
 apt-get update
-apt-get install -y \
+apt-get install -y --no-install-recommends \
     libgl1-mesa-glx \
     libglib2.0-0 \
     libsm6 \
     libxext6 \
-    libxrender1
+    libxrender1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip
+echo "Upgrading pip..."
+python -m pip install --upgrade pip
 
 # Install Python dependencies
-pip install -r requirements.txt
+echo "Installing Python dependencies..."
+pip install --no-cache-dir -r requirements.txt
 
-# Create necessary directories
+# Create necessary directories with proper permissions
+echo "Creating directories..."
 mkdir -p data logs .streamlit
+chmod -R 755 .
 
 # Create empty data files if they don't exist
-touch data/email_alert_subscribers.csv
-touch data/session_log.csv
-touch data/vote_results.csv
-touch data/viewing_requests.csv
+echo "Initializing data files..."
+for file in email_alert_subscribers session_log vote_results viewing_requests; do
+    if [ ! -f "data/${file}.csv" ]; then
+        touch "data/${file}.csv"
+        chmod 666 "data/${file}.csv"
+    fi
+done
 
-# Set proper permissions
-chmod -R 755 .
+echo "=== Setup completed successfully ==="
