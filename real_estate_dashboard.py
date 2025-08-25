@@ -1,8 +1,11 @@
-# Set page configuration FIRST
+# First, import necessary modules for page configuration
 import streamlit as st
+from PIL import Image  # Import Image before using it in set_page_config
+
+# Set page configuration
 st.set_page_config(
     page_title="WestProp - Real Estate Dashboard",
-    page_icon="🏢",
+    page_icon=Image.open("westprop_logo.png"),
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -16,7 +19,6 @@ import folium
 import datetime
 from datetime import datetime as dt
 import altair as alt
-from PIL import Image  # For handling image display
 import random
 import os
 from streamlit_folium import st_folium
