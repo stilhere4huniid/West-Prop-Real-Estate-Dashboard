@@ -1,4 +1,13 @@
-# Real Estate Investment Analysis Dashboard
+<div align="center">
+  <!-- Replace the URL below with your actual logo URL -->
+  <img src="https://via.placeholder.com/300x100?text=WestProp+Logo" alt="WestProp Logo" width="300"/>
+  
+  # Real Estate Investment Analysis Dashboard
+</div>
+
+> **Note**: To display your logo, replace the image URL above with your actual logo URL. The current image is a placeholder.
+
+> **Note**: This project is an independent creation and is not affiliated with WestProp Holdings Limited. The WestProp logo is used for demonstration purposes only and remains the property of WestProp Holdings Limited.
 
 > **Disclaimer**: This is an independent project built for educational and portfolio demonstration purposes. This dashboard is not an official product of WestProp Holdings Limited. All WestProp brand assets, trademarks, and references are used respectfully and remain the exclusive property of WestProp Holdings Limited.
 
@@ -155,7 +164,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-For support or inquiries, please contact [support@westprop.com](mailto:support@westprop.com)
+For support or inquiries, please contact [stillhere4huniid@gmail.com](mailto:stillhere4huniid@gmail.com)
 
 ---
 
