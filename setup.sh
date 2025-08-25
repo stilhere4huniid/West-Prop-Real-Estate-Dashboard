@@ -3,16 +3,26 @@ set -e  # Exit on error
 
 echo "=== Setting up environment ==="
 
-# Update and install system dependencies
+# Install system dependencies
 echo "Installing system dependencies..."
-apt-get update
-apt-get install -y --no-install-recommends \
-    libgl1-mesa-glx \
-    libglib2.0-0 \
-    libsm6 \
-    libxext6 \
-    libxrender1 \
-    && rm -rf /var/lib/apt/lists/*
+apt-get update && apt-get install -y \
+    build-essential \
+    libssl-dev \
+    zlib1g-dev \
+    libbz2-dev \
+    libreadline-dev \
+    libsqlite3-dev \
+    wget \
+    curl \
+    llvm \
+    libncurses5-dev \
+    libncursesw5-dev \
+    xz-utils \
+    tk-dev \
+    libffi-dev \
+    liblzma-dev \
+    python3-openssl \
+    git
 
 # Upgrade pip
 echo "Upgrading pip..."
