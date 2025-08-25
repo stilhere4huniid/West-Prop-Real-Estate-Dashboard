@@ -8,6 +8,23 @@ echo "Installing system dependencies..."
 apt-get update && apt-get install -y \
     build-essential \
     libssl-dev \
+    libffi-dev \
+    python3.11-dev \
+    python3-pip \
+    python3-setuptools \
+    python3-wheel \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender1 \
+    libfontconfig1 \
+    libfreetype6 \
+    libxft2 \
+    libfreetype6-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    zlib1g-dev
     zlib1g-dev \
     libbz2-dev \
     libreadline-dev \

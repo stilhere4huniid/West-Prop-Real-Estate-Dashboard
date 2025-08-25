@@ -1,18 +1,18 @@
 # Core
 streamlit==1.29.0
-pandas==2.0.3
+pandas==1.5.3
 numpy==1.24.3
 
 # Visualization
 matplotlib==3.7.1
 folium==0.15.1
 streamlit-folium==0.14.0
-plotly==5.13.0
+plotly==5.15.0
 altair==4.2.2
 
 # PDF & Images
-Pillow==9.5.0
-reportlab==3.6.13
+Pillow==10.0.0
+reportlab==3.6.12
 openpyxl==3.1.2
 
 # Machine Learning
@@ -22,11 +22,11 @@ joblib==1.2.0
 # Utils
 python-dotenv==1.0.0
 pyOpenSSL==23.0.0
-requests==2.28.2
+requests==2.31.0
 urllib3==1.26.15
 cryptography==39.0.1
 protobuf==4.22.3
 
 # Required for Streamlit Cloud
-pydeck==0.8.0  # Fixed version
+pydeck==0.8.0
 watchdog==3.0.0
