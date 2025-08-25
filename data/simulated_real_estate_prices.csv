@@ -1,0 +1,51 @@
+property_id,location,house_type,stand_size_m2,has_solar,has_water_recycling,has_smart_locks,monthly_utility_cost_usd,expected_rent_usd,market_price_usd
+PROP001,Avondale,Townhouse,1162,1,0,1,117.29,595.24,75600
+PROP002,Gunhill,Apartment,1115,1,1,0,113.44,651.87,74700
+PROP003,Marlborough,Apartment,570,1,1,0,82.54,560.86,51500
+PROP004,Avondale,Townhouse,755,0,1,1,100.07,643.8,51900
+PROP005,Mount Pleasant,Townhouse,761,0,1,1,145.68,766.38,57700
+PROP006,Marlborough,Apartment,1026,1,0,0,89.38,526.08,67400
+PROP007,Marlborough,Villa,551,1,1,0,89.77,589.28,57700
+PROP008,Avondale,Stand-alone,1001,1,1,1,93.81,551.38,70900
+PROP009,Borrowdale,Townhouse,595,1,1,0,102.14,759.3,61000
+PROP010,Mount Pleasant,Stand-alone,1024,0,1,0,83.02,556.61,62200
+PROP011,Avondale,Villa,1019,0,0,0,102.12,526.73,55900
+PROP012,Mount Pleasant,Villa,1048,0,0,0,51.12,542.17,58900
+PROP013,Mount Pleasant,Villa,637,1,1,1,96.73,586.43,67500
+PROP014,Marlborough,Townhouse,1178,1,0,1,91.01,520.65,78800
+PROP015,Gunhill,Villa,352,1,1,0,85.65,563.16,46000
+PROP016,Mount Pleasant,Townhouse,1091,0,0,0,80.49,615.72,63400
+PROP017,Bluff Hill,Villa,516,1,1,0,77.81,588.45,50900
+PROP018,Marlborough,Stand-alone,1063,1,1,0,73.73,683.17,73800
+PROP019,Borrowdale,Stand-alone,487,1,1,0,43.64,568.06,50100
+PROP020,Gunhill,Apartment,679,0,0,0,84.64,579.54,47500
+PROP021,Bluff Hill,Stand-alone,792,1,0,0,111.93,627.11,65400
+PROP022,Bluff Hill,Apartment,340,1,0,0,83.29,824.48,30800
+PROP023,Borrowdale,Stand-alone,456,0,1,0,102.7,521.24,47000
+PROP024,Gunhill,Townhouse,314,1,0,0,68.4,792.36,39200
+PROP025,Marlborough,Stand-alone,1112,0,0,0,63.89,481.64,63600
+PROP026,Pomona,Apartment,364,1,1,0,74.98,622.9,42200
+PROP027,Gunhill,Apartment,1156,1,1,0,69.49,566.06,84200
+PROP028,Borrowdale,Villa,1138,0,1,1,66.34,518.47,75100
+PROP029,Bluff Hill,Townhouse,820,1,0,0,99,669.91,53800
+PROP030,Marlborough,Stand-alone,643,0,1,0,125.58,659.99,50400
+PROP031,Gunhill,Villa,428,0,0,0,76.66,551.88,38800
+PROP032,Pomona,Stand-alone,947,0,1,0,56.16,390.62,66000
+PROP033,Pomona,Stand-alone,771,1,0,1,103.14,558,58200
+PROP034,Mount Pleasant,Villa,362,1,0,1,61.28,613.92,36900
+PROP035,Mount Pleasant,Villa,438,1,1,0,66.33,600.18,46400
+PROP036,Avondale,Villa,798,1,0,1,99.9,675.59,74900
+PROP037,Borrowdale,Villa,892,1,0,0,86.69,793.35,57000
+PROP038,Gunhill,Villa,691,0,0,0,76.26,641.39,42700
+PROP039,Gunhill,Stand-alone,974,1,1,0,91.37,656.78,73400
+PROP040,Avondale,Villa,718,1,1,0,81.81,614.82,59800
+PROP041,Bluff Hill,Townhouse,588,1,0,0,127.79,717.24,48700
+PROP042,Bluff Hill,Apartment,678,0,0,0,76.48,653.14,53600
+PROP043,Avondale,Villa,1072,1,1,0,71.73,674.91,72800
+PROP044,Bluff Hill,Villa,789,0,1,1,80.9,780.9,58400
+PROP045,Mount Pleasant,Stand-alone,530,1,0,0,81.74,622.7,47700
+PROP046,Gunhill,Villa,340,1,1,0,101.91,572.9,40100
+PROP047,Avondale,Villa,327,1,0,0,50.17,644.63,32000
+PROP048,Gunhill,Villa,434,1,0,0,98.52,713.62,43600
+PROP049,Pomona,Stand-alone,500,1,0,0,79.17,650.14,52800
+PROP050,Mount Pleasant,Villa,1139,1,0,0,105.54,706.06,75900

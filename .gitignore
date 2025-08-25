@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# Data files (except templates)
+data/email_alert_subscribers.csv
+data/session_log.csv
+data/vote_results.csv
+data/viewing_requests.csv
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Local development
+.venv/
+venv/
+ENV/
+
+# Project specific
+*.pkl
+*.model
+*.h5
+*.hdf5
+*.tflite
+*.tfl
+*.pbtxt
+*.pb
+*.meta
+*.index
+*.data-*
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib/
+
+# Project files to exclude (if any)
+!.streamlit/config.toml  # We want to keep this
+!data/*.csv             # Keep template CSVs, but not runtime data
+!models/*.pkl           # Keep model files
