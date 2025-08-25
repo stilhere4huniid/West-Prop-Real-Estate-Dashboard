@@ -1,4 +1,11 @@
-# Real Estate Investment Analysis Dashboard
+<div align="center">
+  <!-- Replace the URL below with your actual logo URL -->
+  <img src="https://via.placeholder.com/300x100?text=WestProp+Logo" alt="WestProp Logo" width="300"/>
+  
+  # Real Estate Investment Analysis Dashboard
+</div>
+
+> **Note**: To display your logo, replace the image URL above with your actual logo URL. The current image is a placeholder.
 
 > **Disclaimer**: This is an independent project built for educational and portfolio demonstration purposes. This dashboard is not an official product of WestProp Holdings Limited. All WestProp brand assets, trademarks, and references are used respectfully and remain the exclusive property of WestProp Holdings Limited.
 
@@ -15,7 +22,7 @@ A comprehensive real estate investment analysis and management platform with ROI
 
 ## 🏢 About WestProp Holdings
 
-[WestProp Holdings](https://www.westprop.co.zw/) is a leading real estate development company in Zimbabwe, known for its innovative and sustainable property developments. This project is a tribute to their forward-thinking approach to real estate development and investment.
+[WestProp Holdings](https://westprop.com/) is a leading real estate development company in Zimbabwe, known for its innovative and sustainable property developments. This project is a tribute to their forward-thinking approach to real estate development and investment.
 
 ## 🌟 Features
 
@@ -155,7 +162,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-For support or inquiries, please contact [support@westprop.com](mailto:support@westprop.com)
+For support or inquiries, please contact [stillhere4huniid@gmail.com](mailto:stillhere4huniid@gmail.com)
 
 ---
 
