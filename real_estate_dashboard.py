@@ -3355,8 +3355,10 @@ Log in as admin via the Admin Analytics tab.
 
 - Run what-if scenarios to see how changes in rent, price, or smart feature adoption affect ROI.
 - Use the **Tornado Chart Mode** toggle to switch between:
+  - **Tornado Chart Mode:** Shows the impact of individual features on ROI
   - **Full Impact (0%→100%)**: See the maximum possible ROI impact for each variable.
   - **What-If (Current→100%)**: See the ROI impact of increasing each variable from its current value to 100%.
+  - **Feature Comparison Mode:** Compares the ROI impact of all smart features side by side
 - The tornado chart and table below it will update to show which factors have the biggest effect on your returns.
 
 ## 💡 Tooltips
