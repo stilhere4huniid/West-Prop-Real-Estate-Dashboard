@@ -726,21 +726,21 @@ if page == "🏠 Simulator":
         st.header("⚙️ Simulate Your Property")
         market_price = st.number_input(
             "Market Price (USD)",
-            value=st.session_state.get('market_price', 0),
-            step=1000,
-            help="Enter the estimated property sale price.",
-            key='market_price_input'
+            min_value=0.0,
+            value=float(st.session_state.get('market_price', 100000.0)),
+            step=1000.0,
+            help="The total purchase price of the property"
         )
         monthly_rent = st.number_input(
             "Expected Monthly Rent (USD)",
-            value=st.session_state.get('monthly_rent', 0),
-            step=50,
-            help="Enter the expected rent you'll charge monthly.",
-            key='monthly_rent_input'
+            min_value=0.0,
+            value=float(st.session_state.get('monthly_rent', 1000.0)),
+            step=50.0,
+            help="Expected monthly rental income"
         )
         st.subheader("Smart Features")
         has_solar = st.checkbox(
-            "☀️ Has Solar",
+            "",
             value=st.session_state.has_solar,
             help="Adds rooftop solar panels. Boosts savings and ROI."
         )
@@ -886,8 +886,60 @@ if page == "🏠 Simulator":
             "Smart ROI (Calculated)": round(smart_roi, 2)
         }
         snapshot_df = pd.DataFrame([snapshot])
-        file_path = os.path.join(DATA_DIR, "session_log.csv")
+        # Ensure data directory exists
+        os.makedirs("data", exist_ok=True)
+        file_path = os.path.join("data", "session_log.csv")
         snapshot_df.to_csv(file_path, mode='a', header=not os.path.exists(file_path), index=False)
+
+    # --- Load Past Simulation ---
+    with st.expander("💾 Load Past Simulation", expanded=False):
+        try:
+            # Read the session log from the data directory
+            session_log_path = os.path.join("data", "session_log.csv")
+            if os.path.exists(session_log_path):
+                session_df = pd.read_csv(session_log_path)
+                
+                # Filter out empty rows and format for display
+                session_df = session_df.dropna(how='all')
+                if not session_df.empty:
+                    # Format the display text for each simulation
+                    session_df['display'] = session_df.apply(
+                        lambda row: f"{row['Timestamp']} - ${int(row['Market Price']):,} @ ${int(row['Monthly Rent']):,}/mo", 
+                        axis=1
+                    )
+                    
+                    # Show most recent first
+                    session_df = session_df.sort_values('Timestamp', ascending=False)
+                    
+                    # Create a selectbox with the simulations
+                    selected_sim = st.selectbox(
+                        "Select a simulation to load:",
+                        options=session_df.index,
+                        format_func=lambda x: session_df.loc[x, 'display']
+                    )
+                    
+                    if st.button("Load Selected Simulation"):
+                        # Update session state with selected simulation
+                        sim = session_df.loc[selected_sim]
+                        st.session_state.market_price = float(sim['Market Price'])
+                        st.session_state.monthly_rent = float(sim['Monthly Rent'])
+                        st.session_state.has_solar = bool(sim['Has Solar'])
+                        st.session_state.has_water_recycling = bool(sim['Has Water Recycling'])
+                        st.session_state.has_smart_locks = bool(sim['Has Smart Locks'])
+                        st.session_state.has_smart_thermostats = bool(sim['Has Smart Thermostats'])
+                        st.session_state.has_integrated_security = bool(sim['Has Integrated Security'])
+                        st.session_state.has_ev_charging = bool(sim['Has EV Charging'])
+                        
+                        st.success("Simulation loaded successfully!")
+                        st.rerun()
+                else:
+                    st.info("No saved simulations found in the log.")
+            else:
+                st.info("No session log file found. Save a simulation first.")
+                
+        except Exception as e:
+            st.error(f"Error loading simulations: {str(e)}")
+            st.error("Please check the session log file format.")
 
     # --- Always use session state for calculations and display ---
     # Recalculate for display if form was not submitted (to show current state)
@@ -3213,6 +3265,7 @@ This dashboard helps you simulate and predict the **Return on Investment (ROI)**
 2. Enter your property's market price and expected rent.
 3. Toggle smart features (solar, recycling, smart locks).
 4. See dynamic ROI results, savings, financial breakdowns, and predictions.
+5. **Load Past Simulations** - Access previously saved simulations from the sidebar to review or modify them.
 
 ---
 
