@@ -740,7 +740,7 @@ if page == "🏠 Simulator":
         )
         st.subheader("Smart Features")
         has_solar = st.checkbox(
-            "",
+            "☀️ Has Solar",
             value=st.session_state.has_solar,
             help="Adds rooftop solar panels. Boosts savings and ROI."
         )
