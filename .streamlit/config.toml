@@ -1,13 +1,17 @@
 [server]
 port = 8501
 address = "0.0.0.0"
-enableCORS = true
-enableXsrfProtection = true
+enableCORS = false
+enableXsrfProtection = false
+enableWebsocketCompression = true
+enableStaticServing = true
 
 [browser]
 serverAddress = ""
+serverPort = 8501
 
 [runner]
+fixMatplotlib = true
 magicEnabled = true
 
 [theme]
