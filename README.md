@@ -46,6 +46,12 @@ A comprehensive real estate investment analysis and management platform with ROI
 - View investor leaderboard
 - Analyze community voting trends
 
+### 🤖 Smart ROI Prediction Models
+- Machine learning models for accurate ROI prediction
+- Analysis of smart home features' impact on property value
+- Pre-trained models for quick deployment
+- Detailed ROI calculations and visualizations
+
 ### 📊 Investment Models
 - Compare different investment strategies (Buy-to-Let, Rent-to-Own, etc.)
 - Evaluate REIT opportunities
