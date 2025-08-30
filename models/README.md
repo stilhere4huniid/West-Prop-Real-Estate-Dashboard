@@ -24,9 +24,10 @@ models/
   - Market conditions
 - **Output**: Predicted ROI percentage
 - **Performance Metrics**:
-  - R² Score: [Add your model's R² score]
-  - Mean Absolute Error: [Add MAE]
-  - Mean Squared Error: [Add MSE]
+  - R² Score: 0.55 (test set)
+  - Mean Absolute Error: 0.45 (test set)
+  - Mean Squared Error: 0.34 (test set)
+  - Root Mean Squared Error: 0.58 (test set)
 
 ### 2. ROI Calculator
 - **Purpose**: Calculates detailed ROI metrics including:
@@ -77,9 +78,12 @@ predictions = model.predict(X_transformed)
 | Metric | Value |
 |--------|-------|
 | R² Score | [value] |
-| MAE | [value] |
-| MSE | [value] |
-| RMSE | [value] |
+| Metric | Training Set | Test Set |
+|--------|--------------|----------|
+| R² | 0.941 | 0.548 |
+| MAE | 0.18 | 0.45 |
+| MSE | 0.06 | 0.34 |
+| RMSE | 0.24 | 0.58 |
 
 ## 📈 ROI Analysis
 
@@ -90,7 +94,7 @@ The `roi_calculations_with_details.ipynb` notebook provides comprehensive analys
 4. Visualization of ROI across different property types and locations
 
 ## 📝 Notes
-- The model was trained on data up to [insert date]
+- The model was trained on a dataset of 300 properties (240 training, 60 test)
 - For best results, retrain the model periodically with updated market data
 - The model's predictions are estimates and should be used as one of several factors in investment decisions
 
