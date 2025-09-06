@@ -1,0 +1,541 @@
+2025-08-25 01:13:44,282 - INFO - Email service initialized
+2025-08-25 01:13:44,296 - INFO - SENDER_EMAIL: set
+2025-08-25 01:13:44,301 - INFO - APP_PASSWORD: set
+2025-08-25 01:13:44,451 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-08-25 01:13:44,452 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-08-25 01:13:44,454 - INFO - Connecting to SMTP server...
+2025-08-25 01:13:44,953 - INFO - SMTP connection established
+2025-08-25 01:13:45,140 - INFO - EHLO successful
+2025-08-25 01:13:45,142 - INFO - Starting TLS...
+2025-08-25 01:13:45,927 - INFO - TLS started
+2025-08-25 01:13:45,930 - INFO - Attempting to login...
+2025-08-25 01:13:46,629 - INFO - Login successful
+2025-08-25 01:13:46,629 - INFO - Sending email...
+2025-08-25 01:13:48,796 - INFO - Email sent successfully
+2025-08-25 01:13:49,004 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-08-25 09:34:29,438 - INFO - Email service initialized
+2025-08-25 09:34:29,445 - INFO - SENDER_EMAIL: set
+2025-08-25 09:34:29,445 - INFO - APP_PASSWORD: set
+2025-08-25 09:34:29,484 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-08-25 09:34:29,491 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-08-25 09:34:29,492 - INFO - Connecting to SMTP server...
+2025-08-25 09:34:30,623 - INFO - SMTP connection established
+2025-08-25 09:34:30,825 - INFO - EHLO successful
+2025-08-25 09:34:30,829 - INFO - Starting TLS...
+2025-08-25 09:34:31,418 - INFO - TLS started
+2025-08-25 09:34:31,418 - INFO - Attempting to login...
+2025-08-25 09:34:32,132 - INFO - Login successful
+2025-08-25 09:34:32,133 - INFO - Sending email...
+2025-08-25 09:34:33,637 - INFO - Email sent successfully
+2025-08-25 09:34:33,833 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-08-25 09:43:53,735 - INFO - Email service initialized
+2025-08-25 09:43:53,744 - INFO - SENDER_EMAIL: set
+2025-08-25 09:43:53,746 - INFO - APP_PASSWORD: set
+2025-08-25 09:43:54,670 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-08-25 09:43:54,671 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-08-25 09:43:54,678 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpfcr90ze6\overall.png with CID: overall
+2025-08-25 09:43:54,681 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpfcr90ze6\by_location.png with CID: bylocation
+2025-08-25 09:43:54,682 - INFO - Connecting to SMTP server...
+2025-08-25 09:43:55,185 - INFO - SMTP connection established
+2025-08-25 09:43:55,391 - INFO - EHLO successful
+2025-08-25 09:43:55,392 - INFO - Starting TLS...
+2025-08-25 09:43:55,991 - INFO - TLS started
+2025-08-25 09:43:55,992 - INFO - Attempting to login...
+2025-08-25 09:43:56,813 - INFO - Login successful
+2025-08-25 09:43:56,850 - INFO - Sending email...
+2025-08-25 09:44:00,297 - INFO - Email sent successfully
+2025-08-25 09:44:00,505 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-08-25 09:46:50,929 - INFO - Email service initialized
+2025-08-25 09:46:50,944 - INFO - SENDER_EMAIL: set
+2025-08-25 09:46:50,947 - INFO - APP_PASSWORD: set
+2025-08-25 09:46:52,320 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-08-25 09:46:52,320 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-08-25 09:46:52,920 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmphixqsceh\overall.png with CID: overall
+2025-08-25 09:46:52,923 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmphixqsceh\by_location.png with CID: bylocation
+2025-08-25 09:46:52,924 - INFO - Connecting to SMTP server...
+2025-08-25 09:46:55,120 - INFO - SMTP connection established
+2025-08-25 09:46:55,364 - INFO - EHLO successful
+2025-08-25 09:46:55,367 - INFO - Starting TLS...
+2025-08-25 09:46:56,073 - INFO - TLS started
+2025-08-25 09:46:56,087 - INFO - Attempting to login...
+2025-08-25 09:46:56,809 - INFO - Login successful
+2025-08-25 09:46:56,815 - INFO - Sending email...
+2025-08-25 09:46:59,427 - INFO - Email sent successfully
+2025-08-25 09:46:59,699 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-08-25 09:53:14,194 - INFO - Email service initialized
+2025-08-25 09:53:14,200 - INFO - SENDER_EMAIL: set
+2025-08-25 09:53:14,201 - INFO - APP_PASSWORD: set
+2025-08-25 09:53:14,478 - INFO - Connecting to SMTP server...
+2025-08-25 09:53:14,994 - INFO - SMTP connection established
+2025-08-25 09:53:15,211 - INFO - EHLO successful
+2025-08-25 09:53:15,212 - INFO - Starting TLS...
+2025-08-25 09:53:15,813 - INFO - TLS started
+2025-08-25 09:53:15,814 - INFO - Attempting to login...
+2025-08-25 09:53:16,571 - INFO - Login successful
+2025-08-25 09:53:16,571 - INFO - Sending email...
+2025-08-25 09:53:18,098 - INFO - Email sent successfully
+2025-08-25 09:53:18,303 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-08-25 09:53:51,809 - INFO - Connecting to SMTP server...
+2025-08-25 09:53:52,227 - INFO - SMTP connection established
+2025-08-25 09:53:52,428 - INFO - EHLO successful
+2025-08-25 09:53:52,429 - INFO - Starting TLS...
+2025-08-25 09:53:52,897 - INFO - TLS started
+2025-08-25 09:53:52,897 - INFO - Attempting to login...
+2025-08-25 09:53:53,700 - INFO - Login successful
+2025-08-25 09:53:53,700 - INFO - Sending email...
+2025-08-25 09:53:55,032 - INFO - Email sent successfully
+2025-08-25 09:53:55,236 - INFO - Email successfully sent to chirukakuknes@gmail.com
+2025-08-25 09:57:40,344 - INFO - Email service initialized
+2025-08-25 09:57:40,360 - INFO - SENDER_EMAIL: set
+2025-08-25 09:57:40,362 - INFO - APP_PASSWORD: set
+2025-08-25 09:57:53,070 - INFO - Connecting to SMTP server...
+2025-08-25 09:57:53,556 - INFO - SMTP connection established
+2025-08-25 09:57:53,772 - INFO - EHLO successful
+2025-08-25 09:57:53,773 - INFO - Starting TLS...
+2025-08-25 09:57:54,229 - INFO - TLS started
+2025-08-25 09:57:54,229 - INFO - Attempting to login...
+2025-08-25 09:57:54,977 - INFO - Login successful
+2025-08-25 09:57:54,977 - INFO - Sending email...
+2025-08-25 09:57:56,392 - INFO - Email sent successfully
+2025-08-25 09:57:56,584 - INFO - Email successfully sent to chirukakuknes@gmail.com
+2025-08-25 09:58:26,068 - INFO - Connecting to SMTP server...
+2025-08-25 09:58:26,493 - INFO - SMTP connection established
+2025-08-25 09:58:26,684 - INFO - EHLO successful
+2025-08-25 09:58:26,690 - INFO - Starting TLS...
+2025-08-25 09:58:27,092 - INFO - TLS started
+2025-08-25 09:58:27,093 - INFO - Attempting to login...
+2025-08-25 09:58:27,837 - INFO - Login successful
+2025-08-25 09:58:27,854 - INFO - Sending email...
+2025-08-25 09:58:29,178 - INFO - Email sent successfully
+2025-08-25 09:58:29,369 - INFO - Email successfully sent to chirukakuknes@gmail.com
+2025-08-25 10:02:07,494 - INFO - Email service initialized
+2025-08-25 10:02:07,506 - INFO - SENDER_EMAIL: set
+2025-08-25 10:02:07,509 - INFO - APP_PASSWORD: set
+2025-08-25 10:06:31,638 - INFO - Email service initialized
+2025-08-25 10:06:31,644 - INFO - SENDER_EMAIL: set
+2025-08-25 10:06:31,645 - INFO - APP_PASSWORD: set
+2025-08-25 10:09:29,172 - INFO - Email service initialized
+2025-08-25 10:09:29,255 - INFO - SENDER_EMAIL: set
+2025-08-25 10:09:29,256 - INFO - APP_PASSWORD: set
+2025-08-25 10:13:54,666 - INFO - Email service initialized
+2025-08-25 10:13:54,671 - INFO - SENDER_EMAIL: set
+2025-08-25 10:13:54,672 - INFO - APP_PASSWORD: set
+2025-08-25 10:13:55,256 - INFO - Created overall distribution chart: C:\Users\ABCD\AppData\Local\Temp\tmp8b_zayok\overall.png
+2025-08-25 10:14:11,633 - INFO - Connecting to SMTP server...
+2025-08-25 10:14:12,243 - INFO - SMTP connection established
+2025-08-25 10:14:12,446 - INFO - EHLO successful
+2025-08-25 10:14:12,446 - INFO - Starting TLS...
+2025-08-25 10:14:13,079 - INFO - TLS started
+2025-08-25 10:14:13,130 - INFO - Attempting to login...
+2025-08-25 10:14:13,773 - INFO - Login successful
+2025-08-25 10:14:13,774 - INFO - Sending email...
+2025-08-25 10:14:15,270 - INFO - Email sent successfully
+2025-08-25 10:14:15,462 - INFO - Email successfully sent to kukneschiruka2002@gmail.com
+2025-08-25 10:16:13,874 - INFO - Email service initialized
+2025-08-25 10:16:13,889 - INFO - SENDER_EMAIL: set
+2025-08-25 10:16:13,904 - INFO - APP_PASSWORD: set
+2025-08-25 10:16:14,789 - INFO - Attempting to send email to: kukneschiruka2002@gmail.com
+2025-08-25 10:16:14,790 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-08-25 10:16:14,792 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpshw1bt42\overall.png with CID: overall
+2025-08-25 10:16:14,793 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpshw1bt42\by_location.png with CID: bylocation
+2025-08-25 10:16:14,793 - INFO - Connecting to SMTP server...
+2025-08-25 10:16:15,258 - INFO - SMTP connection established
+2025-08-25 10:16:15,458 - INFO - EHLO successful
+2025-08-25 10:16:15,458 - INFO - Starting TLS...
+2025-08-25 10:16:15,915 - INFO - TLS started
+2025-08-25 10:16:15,915 - INFO - Attempting to login...
+2025-08-25 10:16:16,685 - INFO - Login successful
+2025-08-25 10:16:16,685 - INFO - Sending email...
+2025-08-25 10:16:19,026 - INFO - Email sent successfully
+2025-08-25 10:16:19,248 - INFO - Email successfully sent to kukneschiruka2002@gmail.com
+2025-08-27 11:29:55,436 - INFO - Email service initialized
+2025-08-27 11:29:55,443 - INFO - SENDER_EMAIL: set
+2025-08-27 11:29:55,445 - INFO - APP_PASSWORD: set
+2025-08-27 11:29:56,569 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-08-27 11:29:56,569 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-08-27 11:29:56,572 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpvwictd8q\overall.png with CID: overall
+2025-08-27 11:29:56,578 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpvwictd8q\by_location.png with CID: bylocation
+2025-08-27 11:29:56,578 - INFO - Connecting to SMTP server...
+2025-08-27 11:29:57,220 - INFO - SMTP connection established
+2025-08-27 11:29:57,461 - INFO - EHLO successful
+2025-08-27 11:29:57,463 - INFO - Starting TLS...
+2025-08-27 11:29:57,906 - INFO - TLS started
+2025-08-27 11:29:57,914 - INFO - Attempting to login...
+2025-08-27 11:29:58,703 - INFO - Login successful
+2025-08-27 11:29:58,705 - INFO - Sending email...
+2025-08-27 11:30:01,030 - INFO - Email sent successfully
+2025-08-27 11:30:01,242 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-08-30 11:38:05,407 - INFO - Email service initialized
+2025-08-30 11:38:05,409 - INFO - SENDER_EMAIL: set
+2025-08-30 11:38:05,410 - INFO - APP_PASSWORD: set
+2025-08-30 11:38:06,987 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-08-30 11:38:06,990 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-08-30 11:38:06,994 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpz2n984ca\overall.png with CID: overall
+2025-08-30 11:38:06,997 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpz2n984ca\by_location.png with CID: bylocation
+2025-08-30 11:38:06,999 - INFO - Connecting to SMTP server...
+2025-08-30 11:38:07,893 - INFO - SMTP connection established
+2025-08-30 11:38:08,139 - INFO - EHLO successful
+2025-08-30 11:38:08,140 - INFO - Starting TLS...
+2025-08-30 11:38:09,146 - INFO - TLS started
+2025-08-30 11:38:09,147 - INFO - Attempting to login...
+2025-08-30 11:38:10,055 - INFO - Login successful
+2025-08-30 11:38:10,103 - INFO - Sending email...
+2025-08-30 11:38:13,119 - INFO - Email sent successfully
+2025-08-30 11:38:13,328 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-01 16:57:21,248 - INFO - Email service initialized
+2025-09-01 16:57:21,251 - INFO - SENDER_EMAIL: set
+2025-09-01 16:57:21,252 - INFO - APP_PASSWORD: set
+2025-09-01 16:57:22,066 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-01 16:57:22,068 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-01 16:57:22,071 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpd7hinzwy\overall.png with CID: overall
+2025-09-01 16:57:22,074 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpd7hinzwy\by_location.png with CID: bylocation
+2025-09-01 16:57:22,074 - INFO - Connecting to SMTP server...
+2025-09-01 16:57:22,795 - INFO - SMTP connection established
+2025-09-01 16:57:23,029 - INFO - EHLO successful
+2025-09-01 16:57:23,030 - INFO - Starting TLS...
+2025-09-01 16:57:23,592 - INFO - TLS started
+2025-09-01 16:57:23,594 - INFO - Attempting to login...
+2025-09-01 16:57:24,410 - INFO - Login successful
+2025-09-01 16:57:24,411 - INFO - Sending email...
+2025-09-01 16:57:27,115 - INFO - Email sent successfully
+2025-09-01 16:57:27,331 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-02 13:44:48,392 - INFO - Email service initialized
+2025-09-02 13:44:48,393 - INFO - SENDER_EMAIL: set
+2025-09-02 13:44:48,394 - INFO - APP_PASSWORD: set
+2025-09-02 13:44:48,400 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-02 13:44:48,401 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-02 13:44:48,403 - INFO - Connecting to SMTP server...
+2025-09-02 13:44:49,214 - INFO - SMTP connection established
+2025-09-02 13:44:49,449 - INFO - EHLO successful
+2025-09-02 13:44:49,450 - INFO - Starting TLS...
+2025-09-02 13:44:49,976 - INFO - TLS started
+2025-09-02 13:44:49,976 - INFO - Attempting to login...
+2025-09-02 13:44:50,869 - INFO - Login successful
+2025-09-02 13:44:50,870 - INFO - Sending email...
+2025-09-02 13:44:52,697 - INFO - Email sent successfully
+2025-09-02 13:44:52,914 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-02 14:17:05,706 - INFO - Email service initialized
+2025-09-02 14:17:05,737 - INFO - SENDER_EMAIL: set
+2025-09-02 14:17:05,743 - INFO - APP_PASSWORD: set
+2025-09-02 14:17:05,752 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-02 14:17:05,753 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-02 14:17:05,754 - INFO - Connecting to SMTP server...
+2025-09-02 14:17:06,700 - INFO - SMTP connection established
+2025-09-02 14:17:06,976 - INFO - EHLO successful
+2025-09-02 14:17:06,976 - INFO - Starting TLS...
+2025-09-02 14:17:07,645 - INFO - TLS started
+2025-09-02 14:17:07,645 - INFO - Attempting to login...
+2025-09-02 14:17:08,604 - INFO - Login successful
+2025-09-02 14:17:08,604 - INFO - Sending email...
+2025-09-02 14:17:10,656 - INFO - Email sent successfully
+2025-09-02 14:17:10,917 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-03 23:02:49,409 - INFO - Email service initialized
+2025-09-03 23:02:49,414 - INFO - SENDER_EMAIL: set
+2025-09-03 23:02:49,414 - INFO - APP_PASSWORD: set
+2025-09-03 23:02:49,444 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-03 23:02:49,444 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-03 23:02:49,464 - INFO - Connecting to SMTP server...
+2025-09-03 23:02:50,242 - INFO - SMTP connection established
+2025-09-03 23:02:50,500 - INFO - EHLO successful
+2025-09-03 23:02:50,500 - INFO - Starting TLS...
+2025-09-03 23:02:51,079 - INFO - TLS started
+2025-09-03 23:02:51,079 - INFO - Attempting to login...
+2025-09-03 23:02:51,893 - INFO - Login successful
+2025-09-03 23:02:51,893 - INFO - Sending email...
+2025-09-03 23:02:53,479 - INFO - Email sent successfully
+2025-09-03 23:02:53,690 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-03 23:03:39,008 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-03 23:03:39,009 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-03 23:03:39,011 - INFO - Connecting to SMTP server...
+2025-09-03 23:03:39,767 - INFO - SMTP connection established
+2025-09-03 23:03:40,007 - INFO - EHLO successful
+2025-09-03 23:03:40,008 - INFO - Starting TLS...
+2025-09-03 23:03:40,487 - INFO - TLS started
+2025-09-03 23:03:40,487 - INFO - Attempting to login...
+2025-09-03 23:03:41,342 - INFO - Login successful
+2025-09-03 23:03:41,343 - INFO - Sending email...
+2025-09-03 23:03:42,959 - INFO - Email sent successfully
+2025-09-03 23:03:43,159 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-03 23:04:32,972 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-03 23:04:32,973 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-03 23:04:32,977 - INFO - Connecting to SMTP server...
+2025-09-03 23:04:33,690 - INFO - SMTP connection established
+2025-09-03 23:04:33,946 - INFO - EHLO successful
+2025-09-03 23:04:33,949 - INFO - Starting TLS...
+2025-09-03 23:04:34,429 - INFO - TLS started
+2025-09-03 23:04:34,430 - INFO - Attempting to login...
+2025-09-03 23:04:35,314 - INFO - Login successful
+2025-09-03 23:04:35,314 - INFO - Sending email...
+2025-09-03 23:04:36,872 - INFO - Email sent successfully
+2025-09-03 23:04:37,111 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-05 19:35:20,069 - INFO - Email service initialized
+2025-09-05 19:35:20,080 - INFO - SENDER_EMAIL: set
+2025-09-05 19:35:20,081 - INFO - APP_PASSWORD: set
+2025-09-05 19:35:20,082 - INFO - Attempting to send email to: adonichiruka8@gmail.com
+2025-09-05 19:35:20,082 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 19:35:20,083 - INFO - Connecting to SMTP server...
+2025-09-05 19:35:20,998 - INFO - SMTP connection established
+2025-09-05 19:35:21,262 - INFO - EHLO successful
+2025-09-05 19:35:21,267 - INFO - Starting TLS...
+2025-09-05 19:35:21,992 - INFO - TLS started
+2025-09-05 19:35:21,993 - INFO - Attempting to login...
+2025-09-05 19:35:22,941 - INFO - Login successful
+2025-09-05 19:35:22,941 - INFO - Sending email...
+2025-09-05 19:35:25,210 - INFO - Email sent successfully
+2025-09-05 19:35:25,401 - INFO - Email successfully sent to adonichiruka8@gmail.com
+2025-09-05 19:47:07,388 - INFO - Email service initialized
+2025-09-05 19:47:07,390 - INFO - SENDER_EMAIL: set
+2025-09-05 19:47:07,390 - INFO - APP_PASSWORD: set
+2025-09-05 19:47:07,392 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-05 19:47:07,392 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 19:47:07,394 - INFO - Connecting to SMTP server...
+2025-09-05 19:47:08,234 - INFO - SMTP connection established
+2025-09-05 19:47:08,430 - INFO - EHLO successful
+2025-09-05 19:47:08,430 - INFO - Starting TLS...
+2025-09-05 19:47:08,987 - INFO - TLS started
+2025-09-05 19:47:08,987 - INFO - Attempting to login...
+2025-09-05 19:47:09,913 - INFO - Login successful
+2025-09-05 19:47:09,914 - INFO - Sending email...
+2025-09-05 19:47:12,124 - INFO - Email sent successfully
+2025-09-05 19:47:12,357 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-05 19:47:12,361 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-05 19:47:12,364 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 19:47:12,365 - INFO - Connecting to SMTP server...
+2025-09-05 19:47:12,983 - INFO - SMTP connection established
+2025-09-05 19:47:13,176 - INFO - EHLO successful
+2025-09-05 19:47:13,177 - INFO - Starting TLS...
+2025-09-05 19:47:13,697 - INFO - TLS started
+2025-09-05 19:47:13,698 - INFO - Attempting to login...
+2025-09-05 19:47:14,815 - INFO - Login successful
+2025-09-05 19:47:14,816 - INFO - Sending email...
+2025-09-05 19:47:16,612 - INFO - Email sent successfully
+2025-09-05 19:47:16,805 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-05 19:47:53,208 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-05 19:47:53,210 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 19:47:53,211 - INFO - Connecting to SMTP server...
+2025-09-05 19:47:54,035 - INFO - SMTP connection established
+2025-09-05 19:47:54,341 - INFO - EHLO successful
+2025-09-05 19:47:54,342 - INFO - Starting TLS...
+2025-09-05 19:47:54,962 - INFO - TLS started
+2025-09-05 19:47:54,963 - INFO - Attempting to login...
+2025-09-05 19:47:55,958 - INFO - Login successful
+2025-09-05 19:47:55,958 - INFO - Sending email...
+2025-09-05 19:47:57,720 - INFO - Email sent successfully
+2025-09-05 19:47:57,958 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-05 19:47:57,961 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-05 19:47:57,961 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 19:47:57,962 - INFO - Connecting to SMTP server...
+2025-09-05 19:47:58,746 - INFO - SMTP connection established
+2025-09-05 19:47:59,050 - INFO - EHLO successful
+2025-09-05 19:47:59,051 - INFO - Starting TLS...
+2025-09-05 19:47:59,677 - INFO - TLS started
+2025-09-05 19:47:59,678 - INFO - Attempting to login...
+2025-09-05 19:48:00,792 - INFO - Login successful
+2025-09-05 19:48:00,792 - INFO - Sending email...
+2025-09-05 19:48:02,431 - INFO - Email sent successfully
+2025-09-05 19:48:02,738 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-05 19:58:27,437 - INFO - Email service initialized
+2025-09-05 19:58:27,444 - INFO - SENDER_EMAIL: set
+2025-09-05 19:58:27,446 - INFO - APP_PASSWORD: set
+2025-09-05 19:58:27,448 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-05 19:58:27,451 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 19:58:27,452 - INFO - Connecting to SMTP server...
+2025-09-05 19:58:33,511 - INFO - SMTP connection established
+2025-09-05 19:58:33,705 - INFO - EHLO successful
+2025-09-05 19:58:33,706 - INFO - Starting TLS...
+2025-09-05 19:58:34,192 - INFO - TLS started
+2025-09-05 19:58:34,193 - INFO - Attempting to login...
+2025-09-05 19:58:35,157 - INFO - Login successful
+2025-09-05 19:58:35,158 - INFO - Sending email...
+2025-09-05 19:58:37,615 - INFO - Email sent successfully
+2025-09-05 19:58:38,060 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-05 19:58:38,071 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-05 19:58:38,126 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 19:58:38,226 - INFO - Connecting to SMTP server...
+2025-09-05 19:58:38,849 - INFO - SMTP connection established
+2025-09-05 19:58:39,052 - INFO - EHLO successful
+2025-09-05 19:58:39,053 - INFO - Starting TLS...
+2025-09-05 19:58:39,469 - INFO - TLS started
+2025-09-05 19:58:39,470 - INFO - Attempting to login...
+2025-09-05 19:58:40,321 - INFO - Login successful
+2025-09-05 19:58:40,324 - INFO - Sending email...
+2025-09-05 19:58:41,895 - INFO - Email sent successfully
+2025-09-05 19:58:42,106 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-05 19:59:14,332 - INFO - Email service initialized
+2025-09-05 19:59:14,332 - INFO - SENDER_EMAIL: set
+2025-09-05 19:59:14,333 - INFO - APP_PASSWORD: set
+2025-09-05 19:59:14,334 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-05 19:59:14,335 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 19:59:14,336 - INFO - Connecting to SMTP server...
+2025-09-05 19:59:15,011 - INFO - SMTP connection established
+2025-09-05 19:59:15,220 - INFO - EHLO successful
+2025-09-05 19:59:15,222 - INFO - Starting TLS...
+2025-09-05 19:59:15,720 - INFO - TLS started
+2025-09-05 19:59:15,721 - INFO - Attempting to login...
+2025-09-05 19:59:16,630 - INFO - Login successful
+2025-09-05 19:59:16,630 - INFO - Sending email...
+2025-09-05 19:59:18,758 - INFO - Email sent successfully
+2025-09-05 19:59:19,086 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-05 19:59:19,088 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-05 19:59:19,089 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 19:59:19,089 - INFO - Connecting to SMTP server...
+2025-09-05 19:59:20,005 - INFO - SMTP connection established
+2025-09-05 19:59:20,314 - INFO - EHLO successful
+2025-09-05 19:59:20,315 - INFO - Starting TLS...
+2025-09-05 19:59:20,944 - INFO - TLS started
+2025-09-05 19:59:20,945 - INFO - Attempting to login...
+2025-09-05 19:59:21,964 - INFO - Login successful
+2025-09-05 19:59:21,965 - INFO - Sending email...
+2025-09-05 19:59:23,704 - INFO - Email sent successfully
+2025-09-05 19:59:24,002 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-05 20:04:08,800 - INFO - Email service initialized
+2025-09-05 20:04:08,801 - INFO - SENDER_EMAIL: set
+2025-09-05 20:04:08,802 - INFO - APP_PASSWORD: set
+2025-09-05 20:04:08,802 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-05 20:04:08,802 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 20:04:08,803 - INFO - Connecting to SMTP server...
+2025-09-05 20:04:09,905 - INFO - SMTP connection established
+2025-09-05 20:04:10,105 - INFO - EHLO successful
+2025-09-05 20:04:10,107 - INFO - Starting TLS...
+2025-09-05 20:04:10,668 - INFO - TLS started
+2025-09-05 20:04:10,669 - INFO - Attempting to login...
+2025-09-05 20:04:11,714 - INFO - Login successful
+2025-09-05 20:04:11,715 - INFO - Sending email...
+2025-09-05 20:04:13,485 - INFO - Email sent successfully
+2025-09-05 20:04:13,713 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-05 20:04:13,725 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-05 20:04:13,728 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 20:04:13,734 - INFO - Connecting to SMTP server...
+2025-09-05 20:04:14,424 - INFO - SMTP connection established
+2025-09-05 20:04:14,713 - INFO - EHLO successful
+2025-09-05 20:04:14,715 - INFO - Starting TLS...
+2025-09-05 20:04:15,255 - INFO - TLS started
+2025-09-05 20:04:15,256 - INFO - Attempting to login...
+2025-09-05 20:04:16,207 - INFO - Login successful
+2025-09-05 20:04:16,209 - INFO - Sending email...
+2025-09-05 20:04:18,297 - INFO - Email sent successfully
+2025-09-05 20:04:18,510 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-05 20:15:55,651 - INFO - Email service initialized
+2025-09-05 20:15:55,664 - INFO - SENDER_EMAIL: set
+2025-09-05 20:15:55,665 - INFO - APP_PASSWORD: set
+2025-09-05 20:15:55,668 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-05 20:15:55,670 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 20:15:55,673 - INFO - Connecting to SMTP server...
+2025-09-05 20:15:56,702 - INFO - SMTP connection established
+2025-09-05 20:15:56,970 - INFO - EHLO successful
+2025-09-05 20:15:56,991 - INFO - Starting TLS...
+2025-09-05 20:15:57,495 - INFO - TLS started
+2025-09-05 20:15:57,496 - INFO - Attempting to login...
+2025-09-05 20:15:58,511 - INFO - Login successful
+2025-09-05 20:15:58,518 - INFO - Sending email...
+2025-09-05 20:16:00,560 - INFO - Email sent successfully
+2025-09-05 20:16:00,840 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-05 20:16:00,876 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-05 20:16:00,938 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 20:16:01,041 - INFO - Connecting to SMTP server...
+2025-09-05 20:16:01,856 - INFO - SMTP connection established
+2025-09-05 20:16:02,075 - INFO - EHLO successful
+2025-09-05 20:16:02,078 - INFO - Starting TLS...
+2025-09-05 20:16:02,546 - INFO - TLS started
+2025-09-05 20:16:02,549 - INFO - Attempting to login...
+2025-09-05 20:16:03,420 - INFO - Login successful
+2025-09-05 20:16:03,422 - INFO - Sending email...
+2025-09-05 20:16:05,052 - INFO - Email sent successfully
+2025-09-05 20:16:05,296 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-05 20:19:14,998 - INFO - Email service initialized
+2025-09-05 20:19:14,999 - INFO - SENDER_EMAIL: set
+2025-09-05 20:19:14,999 - INFO - APP_PASSWORD: set
+2025-09-05 20:19:15,001 - INFO - Attempting to send email to: adonischiruka8@gmail.com
+2025-09-05 20:19:15,002 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 20:19:15,004 - INFO - Connecting to SMTP server...
+2025-09-05 20:19:15,766 - INFO - SMTP connection established
+2025-09-05 20:19:16,032 - INFO - EHLO successful
+2025-09-05 20:19:16,035 - INFO - Starting TLS...
+2025-09-05 20:19:16,753 - INFO - TLS started
+2025-09-05 20:19:16,754 - INFO - Attempting to login...
+2025-09-05 20:19:17,776 - INFO - Login successful
+2025-09-05 20:19:17,777 - INFO - Sending email...
+2025-09-05 20:19:20,106 - INFO - Email sent successfully
+2025-09-05 20:19:20,299 - INFO - Email successfully sent to adonischiruka8@gmail.com
+2025-09-05 20:19:20,302 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-05 20:19:20,304 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 20:19:20,307 - INFO - Connecting to SMTP server...
+2025-09-05 20:19:20,963 - INFO - SMTP connection established
+2025-09-05 20:19:21,162 - INFO - EHLO successful
+2025-09-05 20:19:21,162 - INFO - Starting TLS...
+2025-09-05 20:19:21,633 - INFO - TLS started
+2025-09-05 20:19:21,642 - INFO - Attempting to login...
+2025-09-05 20:19:22,608 - INFO - Login successful
+2025-09-05 20:19:22,608 - INFO - Sending email...
+2025-09-05 20:19:24,201 - INFO - Email sent successfully
+2025-09-05 20:19:24,393 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-05 20:37:03,919 - INFO - Email service initialized
+2025-09-05 20:37:03,922 - INFO - SENDER_EMAIL: set
+2025-09-05 20:37:03,925 - INFO - APP_PASSWORD: set
+2025-09-05 22:36:03,882 - INFO - Email service initialized
+2025-09-05 22:36:03,886 - INFO - SENDER_EMAIL: set
+2025-09-05 22:36:03,886 - INFO - APP_PASSWORD: set
+2025-09-05 22:36:04,622 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-05 22:36:04,625 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 22:36:04,633 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmp7tbrrw9f\vote_distribution.png with CID: votechart
+2025-09-05 22:36:04,638 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmp7tbrrw9f\location_votes.png with CID: bylocation
+2025-09-05 22:36:04,639 - INFO - Connecting to SMTP server...
+2025-09-05 22:36:06,146 - INFO - SMTP connection established
+2025-09-05 22:36:06,383 - INFO - EHLO successful
+2025-09-05 22:36:06,384 - INFO - Starting TLS...
+2025-09-05 22:36:06,954 - INFO - TLS started
+2025-09-05 22:36:06,954 - INFO - Attempting to login...
+2025-09-05 22:36:07,829 - INFO - Login successful
+2025-09-05 22:36:07,829 - INFO - Sending email...
+2025-09-05 22:36:10,410 - INFO - Email sent successfully
+2025-09-05 22:36:10,641 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-05 23:38:23,450 - INFO - Email service initialized
+2025-09-05 23:38:23,451 - INFO - SENDER_EMAIL: set
+2025-09-05 23:38:23,452 - INFO - APP_PASSWORD: set
+2025-09-05 23:38:24,304 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-05 23:38:24,305 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-05 23:38:24,310 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmp3pqmccss\vote_distribution.png with CID: votechart
+2025-09-05 23:38:24,312 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmp3pqmccss\location_votes.png with CID: bylocation
+2025-09-05 23:38:24,313 - INFO - Connecting to SMTP server...
+2025-09-05 23:38:25,010 - INFO - SMTP connection established
+2025-09-05 23:38:25,210 - INFO - EHLO successful
+2025-09-05 23:38:25,210 - INFO - Starting TLS...
+2025-09-05 23:38:25,725 - INFO - TLS started
+2025-09-05 23:38:25,725 - INFO - Attempting to login...
+2025-09-05 23:38:26,430 - INFO - Login successful
+2025-09-05 23:38:26,431 - INFO - Sending email...
+2025-09-05 23:38:29,648 - INFO - Email sent successfully
+2025-09-05 23:38:29,869 - INFO - Email successfully sent to stillhere4huniid@gmail.com
+2025-09-06 11:52:25,559 - INFO - Email service initialized
+2025-09-06 11:52:25,560 - INFO - SENDER_EMAIL: set
+2025-09-06 11:52:25,560 - INFO - APP_PASSWORD: set
+2025-09-06 11:52:26,650 - INFO - Attempting to send email to: admin@westprop.com
+2025-09-06 11:52:26,651 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-06 11:52:26,655 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpv5d2lry1\vote_distribution.png with CID: votechart
+2025-09-06 11:52:26,659 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpv5d2lry1\donut_chart.png with CID: donutchart
+2025-09-06 11:52:26,662 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpv5d2lry1\location_votes.png with CID: bylocation
+2025-09-06 11:52:26,663 - INFO - Connecting to SMTP server...
+2025-09-06 11:52:27,554 - INFO - SMTP connection established
+2025-09-06 11:52:27,748 - INFO - EHLO successful
+2025-09-06 11:52:27,748 - INFO - Starting TLS...
+2025-09-06 11:52:28,262 - INFO - TLS started
+2025-09-06 11:52:28,263 - INFO - Attempting to login...
+2025-09-06 11:52:29,004 - INFO - Login successful
+2025-09-06 11:52:29,005 - INFO - Sending email...
+2025-09-06 11:52:31,996 - INFO - Email sent successfully
+2025-09-06 11:52:32,184 - INFO - Email successfully sent to admin@westprop.com
+2025-09-06 11:53:49,854 - INFO - Attempting to send email to: stillhere4huniid@gmail.com
+2025-09-06 11:53:49,854 - INFO - Using sender: chirukatakudzwa61@gmail.com
+2025-09-06 11:53:49,856 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpfxarx64z\vote_distribution.png with CID: votechart
+2025-09-06 11:53:49,858 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpfxarx64z\donut_chart.png with CID: donutchart
+2025-09-06 11:53:49,859 - INFO - Attached image: C:\Users\ABCD\AppData\Local\Temp\tmpfxarx64z\location_votes.png with CID: bylocation
+2025-09-06 11:53:49,860 - INFO - Connecting to SMTP server...
+2025-09-06 11:53:50,455 - INFO - SMTP connection established
+2025-09-06 11:53:50,657 - INFO - EHLO successful
+2025-09-06 11:53:50,658 - INFO - Starting TLS...
+2025-09-06 11:53:51,097 - INFO - TLS started
+2025-09-06 11:53:51,097 - INFO - Attempting to login...
+2025-09-06 11:53:51,858 - INFO - Login successful
+2025-09-06 11:53:51,859 - INFO - Sending email...
+2025-09-06 11:53:54,494 - INFO - Email sent successfully
+2025-09-06 11:53:54,694 - INFO - Email successfully sent to stillhere4huniid@gmail.com
