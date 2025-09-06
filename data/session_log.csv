@@ -1,0 +1,2 @@
+Timestamp,Market Price,Monthly Rent,Has Solar,Has Water Recycling,Has Smart Locks,Has Smart Thermostats,Has Integrated Security,Has EV Charging,Predicted ROI (Model),Traditional ROI (Calculated),Smart ROI (Calculated)
+2025-09-05 19:25:20,120000.0,1000.0,True,False,False,False,False,False,8.74,6.1,6.9

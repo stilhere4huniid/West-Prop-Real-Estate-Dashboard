@@ -1,0 +1,3 @@
+project,property_type,price,size_sqm,location,roi,features
+The Hills Lifestyle Estate,Villa - 4 Bed,380000,250,Borrowdale,8.5,"['solar', 'smart_thermostats', 'security_system']"
+Pokugara Townhouses,Townhouse - Manor,409000,203,Borrowdale,7.8,"['solar', 'water_recycling', 'smart_locks']"
